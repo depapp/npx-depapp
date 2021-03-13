@@ -1,6 +1,6 @@
 {
   "name": "depapp",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "depapp's business card",
   "main": "bin/card.js",
   "bin": {
@@ -8,8 +8,13 @@
   },
   "scripts": {
     "build": "node build.js",
+    "prepublish": "npm run build",
     "dev": "npm run build && node ./bin/card.js"
   },
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/depapp/npx-depapp.git"
@@ -22,5 +27,8 @@
     "boxen": "^5.0.0",
     "chalk": "^4.1.0",
     "standard": "^16.0.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.registry.github.com/"
   }
 }
