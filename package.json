@@ -1,6 +1,6 @@
 {
   "name": "depapp",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "depapp's business card",
   "main": "bin/card.js",
   "bin": {
@@ -27,8 +27,5 @@
     "boxen": "^5.0.0",
     "chalk": "^4.1.0",
     "standard": "^16.0.3"
-  },
-  "publishConfig": {
-    "registry": "https://npm.registry.github.com/"
   }
 }
